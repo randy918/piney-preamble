@@ -59,7 +59,14 @@ misc
 ------------------------------------------------
 1. Universal Styles
 ------------------------------------------------
+
 ----------------------------------------------*/
+@font-face {
+  font-family: "nickson";
+  src: url("../fonts/ssNickson.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding-top: 3vw;
   font-family: system-ui;
@@ -72,7 +79,10 @@ body {
 ------------------------------------------------
 ----------------------------------------------*/
 h1 {
+  font-family: nickson;
   color: rgb(82, 78, 69);
+  font-weight: 900;
+  font-size: 4vw;
 }
 
 /*----------------------------------------------

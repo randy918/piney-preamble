@@ -72,7 +72,18 @@ $colors: (bg: rgba(193, 185, 168, 1),
   ------------------------------------------------
   1. Universal Styles
   ------------------------------------------------
+  
   ----------------------------------------------*/
+  @font-face {
+
+font-family: 'nickson';
+src: url("../fonts/ssNickson.woff2") format('woff2');
+font-weight: normal;
+font-style: normal;
+
+  }
+
+
   body {
     padding-top: 3vw;
     font-family: system-ui;
@@ -84,8 +95,10 @@ $colors: (bg: rgba(193, 185, 168, 1),
   ------------------------------------------------
   ----------------------------------------------*/
   h1 {
-
-color: getColor(theBrown)
+font-family: nickson;
+color: getColor(theBrown);
+font-weight: 900;
+font-size: 4vw;
     
   }
   /*----------------------------------------------

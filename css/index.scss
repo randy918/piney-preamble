@@ -1,0 +1,62 @@
+@import "variables";
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: $header-bg-color;
+    padding: 20px;
+
+    h1 {
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+/* Main Content */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: $footer-bg-color;
+    padding: 20px;
+    text-align: center;
+}

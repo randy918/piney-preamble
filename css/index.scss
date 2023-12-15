@@ -40,21 +40,42 @@ border: 1px solid #fff;
 /*----------------------------------------------
 ------------------------------------------------
 0. CSS Reset
+
+
 ------------------------------------------------
 ----------------------------------------------*/
+
+$colors: (bg: rgba(193, 185, 168, 1),
+    theBrown: rgba(82, 78, 69, 1),
+    theGray: rgba(111, 112, 114,  1),
+  
+);
+
+@function getColor($color-name) {
+    @return map-get($colors, $color-name);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   background-color: getColor(bg)
+
   }
   /*----------------------------------------------
+  display
+  positioning
+  box-model
+  typography
+  manipulation
+  misc
   ------------------------------------------------
   1. Universal Styles
   ------------------------------------------------
   ----------------------------------------------*/
   body {
     padding-top: 3vw;
-    // font-family:;
+    font-family: system-ui;
     text-align: center;
   }
   /*----------------------------------------------
@@ -62,7 +83,11 @@ border: 1px solid #fff;
   2. Header & Nav Styles
   ------------------------------------------------
   ----------------------------------------------*/
-  
+  h1 {
+
+color: getColor(theBrown)
+    
+  }
   /*----------------------------------------------
   ------------------------------------------------
   3. Main Body Styles
